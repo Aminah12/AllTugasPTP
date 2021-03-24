@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaDOM</title>
+    <link rel="stylesheet" href="JavaDom.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h3>Hubungi Kami</h3>
+        <p id="emailName">Email (Wajib diisi)</p>
+        <input type="text" id="emailText"/>
+        <p id="pesanName">Pesan (Wajib diisi)</p>
+        <textarea id="pesanText"></textarea>
+        <p>*Bidang Wajib diisi</p>
+        <input type="submit" class="btn-submit" value="Kirim" onclick="kirim()"/>
+        <p id="hasil"></p>
+    </div>
+    <script>
+        function kirim (){
+            
+            let nameEmail = document.getElementById('emailText').value;
+            let namePesan = document.getElementById('pesanText').value;
+            let tampilan = alert("Terimakasih telah menghubungi kami! " + nameEmail + "\r\n" + namePesan);
+            // document.getElementById('hasil').innerHTML = nameEmail +"<br>" + namePesan;
+        }
+    </script>
+</body>
+</html>
