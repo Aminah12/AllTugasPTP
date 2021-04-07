@@ -48,16 +48,12 @@ const data =
 console.log(`${data[0].name} ada di kelas ${data[0].class} , dia mengikuti club ${data[0].club}`);
 console.log(`${data[1].name} ada di kelas ${data[1].class} , dia mengikuti club ${data[1].club}`);
 
-//Exercise 4 
+//Exercise 3
 //Membuat function diluar Object
 let todos = [
   {id: 1, todo: "belajar coding"},
   {id: 2, todo: "nanti tidur"}
 ];
-const updatee = (id, value) => {
-    return todos[id].todo = value 
-}
-
 
 //function Printall
 const printFix = () => {
